@@ -43,10 +43,10 @@ client
     app.post("/contact", (req, res) => {
       console.log(req.body);
       db.collection(userContact)
-        .insert({
-          name: req.body.userName,
-          email: req.body.userEmail,
-          message: req.body.userMessage,
+        .insertOne({
+          name: req.body.username,
+          email: req.body.email,
+          message: req.body.message,
         })
 
         .then((data) => {
