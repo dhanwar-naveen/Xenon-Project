@@ -21,7 +21,10 @@ function postContact() {
   })
     .then((res) => {
       if (res.status == 200) {
-        console.log("yey");
+        alert("Message sent.");
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
         //window.location.href = "/Frontend/Home.html";
       } else {
         alert("Something went Wrong");
