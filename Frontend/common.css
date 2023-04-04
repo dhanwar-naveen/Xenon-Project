@@ -36,3 +36,45 @@ footer {
   padding: 10px;
   text-align: center;
 }
+/* car card css */
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  margin-top: 0;
+}
+
+.card-content a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.card-content a:hover {
+  background-color: #3e8e41;
+}
