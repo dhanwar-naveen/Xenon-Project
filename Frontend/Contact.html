@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Software Service - Contact</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="Contact.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Contact Us</h1>
+      <form onsubmit="postContact(); return false" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2023 Software Service. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
