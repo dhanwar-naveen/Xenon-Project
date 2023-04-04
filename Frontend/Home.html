@@ -1,63 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>My Project Home Page</title>
-	<style>
-		body {
-			margin: 0;
-			padding: 0;
-			font-family: Arial, sans-serif;
-		}
-		header {
-			background-color: #333;
-			color: #fff;
-			padding: 20px;
-			text-align: center;
-		}
-		nav {
-			background-color: #f2f2f2;
-			border: 1px solid #ccc;
-			overflow: hidden;
-		}
-		nav a {
-			display: block;
-			float: left;
-			color: #333;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-			font-weight: bold;
-		}
-		nav a:hover {
-			background-color: #ddd;
-		}
-		section {
-			padding: 20px;
-			text-align: center;
-		}
-		footer {
-			background-color: #333;
-			color: #fff;
-			padding: 10px;
-			text-align: center;
-		}
-	</style>
-</head>
-<body>
-	<header>
-		<h1>My Project Home Page</h1>
-	</header>
-	<nav>
-		<a href="Home.html">Home</a>
-        <a href="About.html">About</a>
-        <a href="Contact.html">Contact</a>
-	</nav>
-	<section>
-		<h2>Welcome to my project!</h2>
-		<p>This is the home page of my project. You can use the navigation bar above to access other pages.</p>
-	</section>
-	<footer>
-		<p>Copyright © 2023 My Project</p>
-	</footer>
-</body>
+  <head>
+    <title>My Project Home Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      nav {
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+        overflow: hidden;
+      }
+      nav a {
+        display: block;
+        float: left;
+        color: #333;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav a:hover {
+        background-color: #ddd;
+      }
+      section {
+        padding: 20px;
+        text-align: center;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+    <script src="common.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>My Project Home Page</h1>
+    </header>
+    <nav>
+      <a href="Home.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Contact.html">Contact</a>
+      <a onclick="logout()">LogOut</a>
+    </nav>
+    <section>
+      <h2>Welcome to my project!</h2>
+      <p>
+        This is the home page of my project. You can use the navigation bar
+        above to access other pages.
+      </p>
+    </section>
+    <footer>
+      <p>Copyright © 2023 My Project</p>
+    </footer>
+  </body>
 </html>

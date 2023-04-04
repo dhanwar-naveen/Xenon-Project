@@ -13,6 +13,7 @@ function checkUserLogin() {
     .then((res) => {
       if (res.status == 200) {
         console.log("yey");
+        window.localStorage.setItem("user", userName);
         window.location.href = "/Frontend/Home.html";
       } else {
         alert("unauthorized");
