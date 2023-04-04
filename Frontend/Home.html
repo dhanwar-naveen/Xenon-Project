@@ -4,8 +4,9 @@
     <title>CarSell Mart Home Page</title>
     <link rel="stylesheet" href="common.css" />
     <script src="common.js"></script>
+    <script src="HomeApi.js"></script>
   </head>
-  <body>
+  <body onload="onPageLoad()">
     <header>
       <h1>Carsell Mart</h1>
     </header>
@@ -23,7 +24,7 @@
       </p>
     </section>
     <section>
-      <div class="card-row">
+      <div class="card-row" id="root">
         <div class="card">
           <img
             src="https://live.staticflickr.com/7368/12855670675_74f0e0b01d_b.jpg"

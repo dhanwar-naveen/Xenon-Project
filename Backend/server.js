@@ -11,6 +11,7 @@ const client = new MongoClient(url);
 const dbname = "xenon";
 const usercollection = "users";
 const userContact = "contDetails";
+const carcollection = "cars";
 
 client
   .connect(url, { useNewUrlParser: true })
@@ -62,6 +63,22 @@ client
           res
             .status(500)
             .json({ error: true, message: "Not Sent in the Database" });
+        });
+    });
+
+    app.get("/cars", (req, res) => {
+      db.collection(carcollection)
+        .find({})
+        .limit(10)
+        .toArray()
+        .then((data) => {
+          res.status(200).json(data);
+
+          console.log(data);
+        })
+        .catch((e) => {
+          console.log(e.message);
+          res.status(500).json({ error: true, message: "Data Error" });
         });
     });
   })

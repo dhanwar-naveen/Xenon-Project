@@ -6,8 +6,7 @@ This project has two part Backend and Frontend.
 
 - The backend is created using Express.js, and Mongodb node driver.
 - Using Atlas Mongodb in cloud.
-- Made two APIs Login and Contact.
--
+- Made three APIs Login and Contact and get cars.
 
 ## Frontend
 
@@ -16,6 +15,7 @@ This project has two part Backend and Frontend.
 - It has four pages, Login, contact, home and about. (Image atteched below)
 - Each page has a check for session, without session page will rediract to login page automatically.
 - for responsiveness used media queries for css.
+- Created backend for cars api but did not integreted to frontend.
 
 ## Testing
 
