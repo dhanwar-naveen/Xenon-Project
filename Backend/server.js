@@ -68,4 +68,8 @@ client
 
   .catch((err) => console.log(err));
 
+app.get("/", (req, res) => {
+  res.json("Backend Working");
+});
+
 app.listen(3000);
